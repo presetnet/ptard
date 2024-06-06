@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik Spray Paint', sans-serif;
+    color: #178601c4; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+    font-size: 24px; /* Adjust font size */
+    display: flex; /* Make the body a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Make the body fill the viewport */
+    position: relative; /* Ensure position for absolute elements */
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Center text within container */
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+.background {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(200%) contrast(180%);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+}
+
+.main-logo {
+    right: 10px; /* Adjust the right position as needed */
+}
+
+.secondary-logo-1 {
+    right: 100px; /* Adjust the right position as needed */
+}
+
+.secondary-logo-2 {
+    right: 190px; /* Adjust the right position as needed */
+}
+
+.secondary-logo-3 {
+    right: 280px; /* Adjust the right position as needed */
+}
+
+.about {
+    padding: 50px;
+}
+
+.buy {
+    padding: 50px;
+    margin-top: 50px; /* Add margin between sections */
+}
+
+h1, h2, p {
+    color: #178601c4; /* Adjust text color */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.twitter-logo {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    max-height: 50px; /* Set the maximum height */
+    position: fixed; /* Set the position to fixed */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    right: 10px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure the logo appears above other content */
+}
+
+.telegram-logo {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    max-height: 50px; /* Set the maximum height */
+    position: fixed; /* Set the position to fixed */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 10px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure the logo appears above other content */
+}
+
+.dextools-logo {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    max-height: 50px; /* Set the maximum height */
+    position: fixed; /* Set the position to fixed */
+    top: 10px; /* Adjust the distance from the bottom */
+    right: 10px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure the logo appears above other content */
+}
